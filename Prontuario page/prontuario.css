@@ -1,0 +1,80 @@
+:root {
+    --black:#000000;
+    --white:#ffffff;
+    --light-grayish-orange:#E3D4C2;
+    --grayish-orange:#D3BB9F;
+    --slightly-desaturated-orange--light:#C8AA86;
+    --slightly-desaturated-orange--dark:#B89163;
+    --dark-moderate-orange--yellow-tone:#9F7748;
+    --dark-moderate-orange-black-tone:#7D5E39;
+    --very-dark-orange--brown-tone:#572F00;   
+    
+}
+
+@font-face {
+    font-family: 'antic didone';
+    src: url(Fonte/AnticDidone-Regular.ttf);
+}
+
+
+/* head da pagina */
+ body {
+
+    overflow-x: hidden;
+
+}
+
+.inicio {
+
+    width: 500vh;
+    height: 13vh;
+    margin-top: -1vh;
+    margin-left: -10vh;
+    background-color: #d3bb9fc9;
+ 
+}
+
+.inicio img{
+
+    width: 20vh;
+    height: 9vh;
+    padding-left: 15vh;
+    padding-top: 2vh;
+   
+ }
+
+ 
+/* Conteúdo */
+
+.textop {
+
+width: 220vh;
+height: 7vh;
+
+background-color: #C8AA86;
+margin-left: -1vh;
+margin-right: -3vh;
+margin-top: -4vh;
+
+}
+
+.textop p{
+
+font-family: 'antic didone';
+font-size: 4vh;
+font-weight: 600;
+
+border: 1vh;
+padding-top: 1vh;
+padding-left: 2vh;
+}
+
+.conteudo {
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+
