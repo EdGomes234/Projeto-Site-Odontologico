@@ -1,14 +1,14 @@
 :root {
-    --black:#000000;
-    --white:#ffffff;
-    --light-grayish-orange:#E3D4C2;
-    --grayish-orange:#D3BB9F;
-    --slightly-desaturated-orange--light:#C8AA86;
-    --slightly-desaturated-orange--dark:#B89163;
-    --dark-moderate-orange--yellow-tone:#9F7748;
-    --dark-moderate-orange-black-tone:#7D5E39;
-    --very-dark-orange--brown-tone:#572F00;   
-    
+    --black: #000000;
+    --white: #ffffff;
+    --light-grayish-orange: #E3D4C2;
+    --grayish-orange: #D3BB9F;
+    --slightly-desaturated-orange--light: #C8AA86;
+    --slightly-desaturated-orange--dark: #B89163;
+    --dark-moderate-orange--yellow-tone: #9F7748;
+    --dark-moderate-orange-black-tone: #7D5E39;
+    --very-dark-orange--brown-tone: #572F00;
+
 }
 
 @font-face {
@@ -16,84 +16,170 @@
     src: url(Fonte/AnticDidone-Regular.ttf);
 
     font-family: "inter";
-    src: url(fonte/Inter.ttc) ;
+    src: url(fonte/Inter.ttc);
 
 }
 
 
-
 /* head da pagina */
- body {
+body {
 
     overflow-x: hidden;
 
 }
 
-.inicio {
-
-    width: 500vh;
-    height: 13vh;
-    margin-top: -1vh;
-    margin-left: -10vh;
-    background-color: #d3bb9fc9;
- 
+header {
+    width: 100%;
+    height: 7%;
+    padding-left: 3vh;
+    margin-left: -1vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 50;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #C8AA86, #E3D4C2, #C8AA86);
 }
 
-.inicio img{
+header img{
+    width: 180px;
+    height: 60px;
+    margin-left: -180vh;
+}
 
-    width: 20vh;
-    height: 9vh;
-    padding-left: 15vh;
-    padding-top: 2vh;
-   
- }
 
- 
 /* Conteúdo prontuario */
 
 .textop {
 
-width: 220vh;
-height: 7vh;
+    width: 210vh;
+    height: 7vh;
 
-background-color: #C8AA86;
-margin-left: -1vh;
-margin-right: -3vh;
-margin-top: -4vh;
-
+    background-color: #C8AA86;
+    margin-left: -1vh;
+    margin-top: 66px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-.textop p{
+.textop p {
 
-font-family: 'antic didone';
-font-size: 4vh;
-font-weight: 600;
+    font-family: 'antic didone';
+    font-size: 4vh;
+    font-weight: 500;
 
-border: 1vh;
-padding-top: 1vh;
-padding-left: 2vh;
+    border: 1vh;
+    padding-top: 1vh;
+    padding-left: 2vh;
+
 }
 
 .conteudo {
-
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    
+    width: fit-content;
+    margin: 5vh;
+    margin-left: 65vh;
     font-family: "inter";
+    padding: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    
+
+}
+
+.conteudo input {
+
+    border: 0;
+    border-bottom: 1px solid;
+    cursor: text;
+    transition: 0.5s ease-in-out;
+    outline: 0;
+    font-size: 1.9vh;
+    margin-top: 0.9vh;
+    margin-bottom: 0.9vh;
     
 }
 
-.conteudo input{
+.name input {
 
-border: 0;
-border-bottom: 1px solid ;
-cursor: text;
-transition: 0.5s ease-in-out;
-outline: 0;
-font-size: 16px;
+    width: 30vh;
 }
 
+.idade {
+
+    margin-left: 48vh;
+    margin-top: -4.2vh;
+
+}
+
+.idade input {
+
+    width: 5vh;
+
+}
+
+.genero {
+
+    margin-top: 0.8vh;
+    margin-bottom: 0.8vh;
+
+}
+
+.segunda {
+
+    margin-top: 0.8vh;
+    margin-bottom: 0.8vh;
+
+}
+
+.terceira {
+
+    margin-top: 0.8vh;
+    margin-bottom: 0.8vh;
+
+}
+
+.quarta {
+
+    margin-top: 0.8vh;
+    margin-bottom: 0.8vh;
+
+}
+
+.quinta {
+
+    margin-top: 0.8vh;
+    margin-bottom: 0.8vh;
+
+}
+
+.sexta {
+
+    margin-top: 0.8vh;
+    margin-bottom: 0.8vh;
+
+}
+
+.setima {
+
+    margin-top: 0.8vh;
+    margin-bottom: 0.8vh;
+
+}
+
+.conteudo p {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    margin-top: 5vh;
+
+
+}
 
 /* Conteúdo consulta */
 
@@ -102,29 +188,29 @@ font-size: 16px;
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 5vh;
-
+   
 }
 
 .textop2 {
 
     width: 220vh;
     height: 7vh;
-    
+
     background-color: #C8AA86;
     margin-left: -1vh;
     margin-right: -3vh;
-    margin-top: -4vh;
-    
-    }
-    
-.textop2 p{
-    
+    margin-top: 0vh;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+.textop2 p {
+
     font-family: 'antic didone';
     font-size: 4vh;
-    font-weight: 600;
-    
+    font-weight: 500;
+
     border: 1vh;
     padding-top: 1vh;
     padding-left: 2vh;
- }
-
+}
