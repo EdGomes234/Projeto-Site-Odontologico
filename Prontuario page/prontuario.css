@@ -14,7 +14,12 @@
 @font-face {
     font-family: 'antic didone';
     src: url(Fonte/AnticDidone-Regular.ttf);
+
+    font-family: "inter";
+    src: url(fonte/Inter.ttc) ;
+
 }
+
 
 
 /* head da pagina */
@@ -44,7 +49,7 @@
  }
 
  
-/* Conteúdo */
+/* Conteúdo prontuario */
 
 .textop {
 
@@ -73,8 +78,53 @@ padding-left: 2vh;
 
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-family: "inter";
+    
+}
 
+.conteudo input{
+
+border: 0;
+border-bottom: 1px solid ;
+cursor: text;
+transition: 0.5s ease-in-out;
+outline: 0;
+font-size: 16px;
 }
 
 
+/* Conteúdo consulta */
+
+.conteudo2 {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5vh;
+
+}
+
+.textop2 {
+
+    width: 220vh;
+    height: 7vh;
+    
+    background-color: #C8AA86;
+    margin-left: -1vh;
+    margin-right: -3vh;
+    margin-top: -4vh;
+    
+    }
+    
+.textop2 p{
+    
+    font-family: 'antic didone';
+    font-size: 4vh;
+    font-weight: 600;
+    
+    border: 1vh;
+    padding-top: 1vh;
+    padding-left: 2vh;
+ }
 
