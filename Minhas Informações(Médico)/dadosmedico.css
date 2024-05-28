@@ -1,0 +1,156 @@
+header {
+    width: 100%;
+    height: 7%;
+    margin-left: -0.9vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 50;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #C8AA86, #E3D4C2, #C8AA86);
+}
+
+header img{
+    width: 180px;
+    height: 60px;
+    margin-right: 170vh;
+}
+
+.conteudo {
+
+width: 140vh;
+height: 80vh;
+margin-top: 10vh;
+margin-left: 30vh;
+border-style: solid;
+font-family: 'antic';
+display: flex;
+flex-direction: column;
+}
+
+.conteudo p{
+
+font-size: 6vh;
+display: flex;
+justify-content: center;
+margin-top: -2vh;
+margin-right: 20px;
+
+}
+
+.conteudo input {
+
+font-family: 'inter';
+font-size: 3vh;
+
+}
+
+label{
+
+font-size: 3vh;
+
+}
+
+.nome{
+
+margin-left: 2vh;
+
+}
+
+#nome {
+
+border-radius: 1vh;
+width: 30vh;
+margin-top: -4.2vh;
+margin-left:0vh;
+
+}
+
+.sobrenome{
+
+margin-top: -4.2vh;
+margin-left: 45vh;
+margin-bottom: 3vh;
+
+}
+
+#sobrenome {
+
+border-radius: 1vh;    
+width: 40vh;
+
+
+}
+
+.cpf {
+
+margin-left: 4vh;
+
+}
+
+#cpf {
+
+border-radius: 1vh;
+width: 30vh;
+
+}
+
+.clinica {
+
+margin-top: -4vh;
+margin-left: 50vh;
+margin-bottom: 3vh;
+}
+
+#clinica {
+
+border-radius: 1vh;
+width: 30vh;
+
+}
+
+.cargo {
+
+margin-left: 2vh;
+
+}
+
+#cargo {
+
+width: 30vh;
+border-radius: 1vh;
+
+}
+
+.cep {
+
+margin-left: 60vh;
+
+}
+
+#cep {
+
+width: 55vh;
+border-radius: 1vh;
+
+}
+
+.contato {
+
+margin-left: -4vh;
+margin-top: -4.2vh;
+margin-bottom: 3vh;
+
+}
+
+#contato {
+
+width: 20vh;
+border-radius: 1vh;
+
+}
+
