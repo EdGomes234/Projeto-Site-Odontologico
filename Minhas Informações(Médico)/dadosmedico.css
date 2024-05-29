@@ -1,3 +1,33 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --light-grayish-orange: #E3D4C2;
+    --grayish-orange: #D3BB9F;
+    --slightly-desaturated-orange--light: #C8AA86;
+    --slightly-desaturated-orange--dark: #B89163;
+    --dark-moderate-orange--yellow-tone: #9F7748;
+    --dark-moderate-orange-black-tone: #7D5E39;
+    --very-dark-orange--brown-tone: #572F00;
+
+}
+
+@font-face {
+    font-family: 'antic didone';
+    src: url(Fonte/AnticDidone-Regular.ttf);
+
+    font-family: "inter";
+    src: url(fonte/Inter.ttc);
+
+}
+
+
+body {
+
+background-color: #D3BB9F;
+
+}
+
+
 header {
     width: 100%;
     height: 7%;
@@ -22,30 +52,40 @@ header img{
 
 .conteudo {
 
-width: 140vh;
-height: 80vh;
-margin-top: 10vh;
-margin-left: 30vh;
+    margin-left: -10vh;
+    margin-top: 10vh;
+    background-color: #D3BB9F;
+    }
+    
+    .conteudo p{
+    
+    font-size: 6vh;
+    display: flex;
+    justify-content: center;
+    
+    }
+
+.dados {
+
+width: 104vh;
+height: 50vh;
 border-style: solid;
+border-radius: 1vh;
 font-family: 'antic';
 display: flex;
 flex-direction: column;
-}
-
-.conteudo p{
-
-font-size: 6vh;
-display: flex;
-justify-content: center;
-margin-top: -2vh;
-margin-right: 20px;
+margin-left: 52vh;
+padding: 5vh;
+background-color: #c99d6c;
 
 }
 
-.conteudo input {
+.dados input {
 
 font-family: 'inter';
-font-size: 3vh;
+font-size: 2.7vh;
+border-color: #000000;
+outline: none;
 
 }
 
@@ -66,7 +106,7 @@ margin-left: 2vh;
 border-radius: 1vh;
 width: 30vh;
 margin-top: -4.2vh;
-margin-left:0vh;
+padding-left: 1vh;
 
 }
 
@@ -74,7 +114,7 @@ margin-left:0vh;
 
 margin-top: -4.2vh;
 margin-left: 45vh;
-margin-bottom: 3vh;
+margin-bottom: 4vh;
 
 }
 
@@ -82,7 +122,7 @@ margin-bottom: 3vh;
 
 border-radius: 1vh;    
 width: 40vh;
-
+padding-left: 1vh;
 
 }
 
@@ -96,21 +136,21 @@ margin-left: 4vh;
 
 border-radius: 1vh;
 width: 30vh;
-
+padding-left: 1vh;
 }
 
 .clinica {
 
 margin-top: -4vh;
 margin-left: 50vh;
-margin-bottom: 3vh;
+margin-bottom: 4vh;
 }
 
 #clinica {
 
 border-radius: 1vh;
 width: 30vh;
-
+padding-left: 1vh;
 }
 
 .cargo {
@@ -123,34 +163,50 @@ margin-left: 2vh;
 
 width: 30vh;
 border-radius: 1vh;
-
+padding-left: 1vh;
 }
+
+.contato {
+
+    margin-left: 45vh;
+    margin-top: -4.2vh;
+    margin-bottom: 4vh;
+    
+    }
+    
+    #contato {
+    
+    width: 20vh;
+    border-radius: 1vh;
+    padding-left: 1vh;
+    }
+        
 
 .cep {
 
-margin-left: 60vh;
+margin-left: 4vh;
+margin-bottom: 10vh;
 
 }
 
 #cep {
 
-width: 55vh;
+width: 60vh;
 border-radius: 1vh;
+padding-left: 1vh;
 
 }
 
-.contato {
+button {
 
-margin-left: -4vh;
-margin-top: -4.2vh;
-margin-bottom: 3vh;
-
-}
-
-#contato {
-
-width: 20vh;
+width: 17vh;
+height: 5vh;
+font-size: 3vh;
+font-family: 'antic';
 border-radius: 1vh;
+background-color: white;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+margin-left: 75vh;
 
 }
 
