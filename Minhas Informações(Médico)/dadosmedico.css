@@ -67,7 +67,7 @@ header img{
 
 .dados {
 
-width: 104vh;
+width: 95vh;
 height: 50vh;
 border-style: solid;
 border-radius: 1vh;
@@ -86,6 +86,7 @@ font-family: 'inter';
 font-size: 2.7vh;
 border-color: #000000;
 outline: none;
+margin-left: 1vh;
 
 }
 
@@ -95,16 +96,26 @@ font-size: 3vh;
 
 }
 
+.imagemperfil img {
+
+width: 25vh;
+height: 15;
+margin-left: 5vh;
+
+}
+
 .nome{
 
-margin-left: 2vh;
+margin-left: 38vh;
+margin-top: -23vh;
+margin-bottom: 3vh;
 
 }
 
 #nome {
 
 border-radius: 1vh;
-width: 30vh;
+width: 41vh;
 margin-top: -4.2vh;
 padding-left: 1vh;
 
@@ -112,50 +123,53 @@ padding-left: 1vh;
 
 .sobrenome{
 
-margin-top: -4.2vh;
-margin-left: 45vh;
-margin-bottom: 4vh;
+
+margin-left: 37.5vh;
+margin-bottom: 3vh;
 
 }
 
 #sobrenome {
 
 border-radius: 1vh;    
-width: 40vh;
+width: 35vh;
 padding-left: 1vh;
 
 }
 
 .cpf {
 
-margin-left: 4vh;
+margin-left: 38vh;
 
 }
 
 #cpf {
 
 border-radius: 1vh;
-width: 30vh;
+width: 20vh;
 padding-left: 1vh;
+margin-left: -0.5vh;
 }
 
-.clinica {
+.contato {
 
-margin-top: -4vh;
-margin-left: 50vh;
-margin-bottom: 4vh;
-}
-
-#clinica {
-
-border-radius: 1vh;
-width: 30vh;
-padding-left: 1vh;
-}
+    margin-left: 65vh;
+    margin-top: -7.5vh;
+    margin-bottom: 3vh;
+    
+    }
+    
+    #contato {
+    
+    width: 25vh;
+    border-radius: 1vh;
+    padding-left: 1vh;
+    margin-left: -1vh;
+ }
 
 .cargo {
 
-margin-left: 2vh;
+margin-left: 29vh;
 
 }
 
@@ -164,36 +178,37 @@ margin-left: 2vh;
 width: 30vh;
 border-radius: 1vh;
 padding-left: 1vh;
+margin-left: -1vh;
 }
 
-.contato {
+.clinica {
 
-    margin-left: 45vh;
-    margin-top: -4.2vh;
-    margin-bottom: 4vh;
-    
+    margin-top: -7.4vh;
+    margin-left: 65vh;
+    margin-bottom: 3vh;
     }
     
-    #contato {
+    #clinica {
     
-    width: 20vh;
     border-radius: 1vh;
+    width: 25vh;
     padding-left: 1vh;
-    }
-        
+    margin-left: -1vh;
+    }        
 
 .cep {
 
-margin-left: 4vh;
-margin-bottom: 10vh;
+margin-left: 29vh;
+margin-bottom: 4vh;
 
 }
 
 #cep {
 
-width: 60vh;
+width: 61vh;
 border-radius: 1vh;
 padding-left: 1vh;
+margin-left: -1vh;
 
 }
 
@@ -206,7 +221,7 @@ font-family: 'antic';
 border-radius: 1vh;
 background-color: white;
 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
-margin-left: 75vh;
+margin-left: 73vh;
 
 }
 
