@@ -16,112 +16,168 @@
     src: url(Fonte/AnticDidone-Regular.ttf);
 }
 
-/* -----Cabeçalho------- */
+
 body {
 
-overflow-x: hidden;
-background-color: #E3D4C2;
+  overflow-x: hidden;
+  background-color: #E3D4C2;
+  margin: 0;
+  padding: 0;
+
+  }
+  
+/* -----Cabeçalho------- */
+
+/* Pocisionamento (Fixo) */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  
 }
 
-
-
-.inicio {
-
-    width: 500vh;
-    height: 13vh;
-    margin-top: -1%;
-    margin-left: -5%;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-    background-color: #d3bb9fc9;
+/* Posicionamento (Organizacao) */
+header nav {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(to top, #c8aa86, #e3d4c2, #c8aa86);
  
-}
-/* -------Parte lateral esquerda------- */
-
-/* .barra {
-
-    width: 40vh;
-    height: 100vh;
-
-    margin-top: 0.5mm;
-    margin-left: -2vh;
-    border-style: solid;
-    border-width: 0.1mm;
-    border-color: rgba(0, 0, 0, 0.568);
-    background-color: #C8AA86;
-    
-    }
-
-  .leftbar {
-
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem Logo */
+header img {
+  width: 180px;
+  height: 60px;
+}
+
+/* Estilizacao Lista */
+.nav-lista {
   list-style: none;
-  margin-top: -1vh;
- 
+  display: flex;
+}
 
+/* Estilizacao Botoes */
+header .nav-lista li button {
+  padding: 0px 15px;
+  font-size: 110%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "antic didone";
+  border: none;
+  color: #7d5e39;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Estilizacao Botoes:hover */
+header .nav-lista li button:hover {
+  color: #7d5e39;
+  text-decoration-line: underline;
+  text-decoration-color: #7d5e39;
+}
+
+
+
+/* ------ Area de reponsividade ------ */
+/* botao de responsividade */
+header .Menu {
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+header label[for="Menu"] img {
+  width: 75px;
+  height: 50px;
+}
+
+/* .Menu .chevron-right {
+  animation: keyframes-rotate 0.5s backwards;
+  transform: rotate(180deg);
+} */
+
+/* configuracao no checked */
+/* .Menu input:checked ~ .chevron-right {
+  animation: keyframes-return 0.5s backwards;
+  transform: rotate(0deg);
+} */
+
+/* esconde o input*/
+header input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* ------ Animacao ------ */
+/* @keyframes keyframes-rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
   }
 
-  ul li a{
+  100% {
+    transform: rotate(180deg);
+  }
+}
 
-    padding: 1.5vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    margin-top: 4vh;
-    font-size: 3vh;
-    font-family: 'antic didone';
-    text-decoration: none;
-    
-    
-    color: var(--very-dark-orange--brown-tone);
-    display: block;
-    
+@keyframes keyframes-return {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
   }
 
-  ul li a:hover {
+  100% {
+    transform: rotate(0deg);
+  }
+} */
 
-    padding: 1.5vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    margin-top: 4vh;
-    font-size: 3.2vh;
-    font-family: 'antic didone';
-    text-decoration: none;
-    
-    
-    background-color: var(--dark-moderate-orange-black-tone);
-    color: black;
-    display: block;
-    border-radius: 1vh;
-
-
-
+@media (max-width: 450px) {
+  header nav {
+    justify-content: space-around;
+  }
+  .nav-lista {
+    width: 60vw;
+    height: 92vh;
+    position: absolute;
+    top: 70px;
+    right: 0%;
+    border-left: 0.5px solid var(--very-dark-grayish-blue);
+    background: #d6b690;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease-in;
+    overflow-x: hidden;
   }
 
+  header .Menu {
+    display: flex;
+  }
+  
+  #Menu:checked ~ .nav-lista {
+    right: -100%;
+  }
+}
 
-  img {
-
-  width: 6vh;
-  height: 6vh;
-
-  margin-top: -2vh;
-  margin-bottom: -2vh;
-  margin-left: -2vh;
-  margin-right: 2vh;
-
-  } */
-
-/* infromação dentro dos pacientes */
+/* Conteudo */
 
 .conteudo {
 
-max-width: 87vh;
-margin: 0 auto;
+padding-top: 5%;
+padding-left: 30%;
+
 }
 
 p {
-
-margin: 0.5vh;
+margin: 0.3vh;
 font-size: 2.7vh;
 font-family: 'antic didone';
 color: #572F00;
@@ -135,6 +191,11 @@ color: #572F00;
 
 }
 
+.info:hover{
+
+transform: scale(1.1,1.1);
+cursor: pointer;
+}
   .paciente {
 
    width: 85vh;
@@ -143,20 +204,12 @@ color: #572F00;
    background: rgb(200,170,134);
    background: linear-gradient(0deg, rgba(200,170,134,1) 0%, rgba(227,212,194,0.9472163865546218) 50%, rgba(200,170,134,1) 100%);
    border-radius: 5vh;
-   margin-top: 8vh;
+   margin-bottom: 7vh;
+   
 
   }
   
-  .inicio img{
-
- width: 20vh;
- height: 9vh;
- padding-left: 15vh;
- padding-top: 2vh;
-
-  }
-
-.conteudo img {
+.paciente img {
 
 width: 23vh;
 height: 23vh;
