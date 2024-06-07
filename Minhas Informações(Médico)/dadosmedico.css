@@ -52,12 +52,16 @@ header {
   header img {
     width: 180px;
     height: 60px;
+    margin-right: 10vh;
+    margin-left: -40vh;
+    
   }
   
   /* Estilizacao Lista */
   .nav-lista {
     list-style: none;
     display: flex;
+    
   }
   
   /* Estilizacao Botoes */
@@ -68,6 +72,8 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     font-family: "antic didone";
+    margin: 6vh;
+    
     border: none;
     color: #7d5e39;
     background: transparent;
@@ -167,11 +173,14 @@ header {
       right: -100%;
     }
   }
+ 
+
+  /* conteudo */
 
 .conteudo {
-    width: 100%;
+   
     background-color: #D3BB9F;
-
+    padding: 5vh;
     }
     
     .conteudo p{
@@ -191,7 +200,7 @@ border-radius: 1vh;
 font-family: 'antic';
 display: flex;
 flex-direction: column;
-margin-left: 52vh;
+margin-left: 42vh;
 padding: 5vh;
 background-color: #c99d6c;
 
@@ -329,7 +338,7 @@ margin-left: -1vh;
 
 }
 
-button {
+.enviar button {
 
 width: 17vh;
 height: 5vh;
